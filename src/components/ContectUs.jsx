@@ -1,25 +1,29 @@
 import React from "react";
-import aboutImg from "../assets/images/about-image.png";
+import contectUs from "../assets/images/contectUs.png";
+import serviceBackground from "../assets/images/service-background.png";
 
-const About = () => {
+const ContectUs = () => {
   return (
-    <div className="flex px-5 h-[100vh]">
-      <img src={aboutImg} className="h-32 mx-5" />
+    <div
+      className={`flex px-5 `}
+      style={{ backgroundImage: `url(${serviceBackground})` }}
+    >
+      <img src={contectUs} alt="Service Image" className="h-32 mx-5" />
       <div className="">
-        <h3 className="font-bold about-Heading">ABOUT US</h3>
+        <h3 className="font-bold">Contect Us</h3>
 
-        <p className="about-p">
+        <p>
           Rare Earth Genomics is a partnership formed with Texas A&amp;M
           Agrilife to accelerate hemp research and create tools for the farmer.
           Ongoing research trials are establishing hemp science best practices.
         </p>
-        <p className="about-p">
+        <p>
           The REG mission is to increase likelihood of a successful harvest
           through genetic analysis and rigorous environmental testing of
           vigorous cultivars. Reliable datasets, analytic tools and stable
           germplasm are core to the program. Success of the farmer is the goal!
         </p>
-        <p className="about-p">
+        <p>
           We believe that prosperity begins with a seed and the mission is to
           bring the stable genetics, cultivation technology and seeds to the
           world.
@@ -29,4 +33,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ContectUs;
