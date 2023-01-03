@@ -5,7 +5,7 @@ import bodybackground from "./assets/images/body-background.png";
 import land from "./land.png";
 import cat from "./cat.gif";
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
@@ -125,20 +125,25 @@ function App() {
       {/* <ContectUs /> */}
 
       <div
-      // style={{
-      //   backgroundImage: `url(${bodybackground})`,
-      //   backgroundSize: "cover",
-      //   backgroundAttachment: "fixed",
-      // }}
+        style={{
+          backgroundImage: `url(${bodybackground})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
       >
-        {/* <Header />
+        <Popup onTop={true} />
+        <Header />
         <MainSection />
         <Second />
         <About />
         <ContectUs />
-        <Footer /> */}
+        <Footer />
 
-        <Popup />
+        {/* <About /> */}
+
+        {/* <Services /> */}
+
+        {/* <ContectUs /> */}
       </div>
     </>
   );
