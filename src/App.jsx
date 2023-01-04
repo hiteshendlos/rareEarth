@@ -22,6 +22,8 @@ import {
 } from "react-use-scroll-position";
 import Second from "./components/Second";
 import Popup from "./components/Popup";
+import { Test } from "./test";
+import Partners from "./components/Partners";
 
 function App() {
   const ref = useRef();
@@ -113,38 +115,25 @@ function App() {
     // </div>
 
     <>
-      {/* <Header /> */}
-      {/* 
-      <MainSection /> */}
-
-      {/* <Footer /> */}
-      {/* <About /> */}
-
-      {/* <Services /> */}
-
-      {/* <ContectUs /> */}
-
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${bodybackground})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
       >
-        <Popup onTop={true} />
+        <Popup onTop={false} />
         <Header />
         <MainSection />
         <Second />
         <About />
         <ContectUs />
         <Footer />
+      </div> */}
 
-        {/* <About /> */}
+      <Test />
 
-        {/* <Services /> */}
-
-        {/* <ContectUs /> */}
-      </div>
+      {/* <Partners /> */}
     </>
   );
 }

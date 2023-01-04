@@ -3,8 +3,8 @@ import aboutImg from "../assets/images/about-image.png";
 
 const About = () => {
   return (
-    <div className="flex px-5 h-[100vh]">
-      <img src={aboutImg} className="h-32 mx-5" />
+    <div className="flex px-[130px] h-[100vh] w-[100vw] items-center px-16">
+      <img src={aboutImg} className="h-72 mx-10" />
       <div className="">
         <h3 className="font-bold about-Heading">ABOUT US</h3>
 

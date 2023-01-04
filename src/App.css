@@ -50,7 +50,8 @@
 /* popup classes */
 
 .popup-intial {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 33%;
   box-shadow: 0 7px 32px rgb(0 0 0);
   animation-name: example;
@@ -61,14 +62,15 @@
 
 @keyframes example {
   from {
-    top: -50%;
+    top: -130px;
   }
   to {
     top: 0px;
   }
 }
 .popup-out {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 33%;
   box-shadow: 0 7px 32px rgb(0 0 0);
   animation-name: example2;
@@ -82,6 +84,70 @@
     top: 0px;
   }
   to {
-    top: -100%;
+    top: -50%;
   }
 }
+
+/* services section  */
+
+.service-heading {
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: "Futura-medium";
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.service-paragraph {
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-family: "Futura-light";
+  width: 75%;
+}
+
+/* partners section  */
+
+/* .partners-boxes {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 210px;
+  height: 180px;
+  background: var(--main-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.partners-boxes::after {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url("./assets/images/body-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: scale(0.98);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  content: "";
+}
+
+.partners-boxes::before {
+  background-color: transparent;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: scale(0.6);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  content: "";
+} */
